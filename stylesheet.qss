@@ -1,0 +1,126 @@
+/* 主窗口样式 */
+QWidget#Form {
+    background-color: #2D2D30;
+    font-family: "Segoe UI", "Microsoft YaHei";
+}
+
+/* 标题样式 */
+QLabel {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* 区域标题样式 */
+QLabel[label], QLabel[label_2] {
+    font-size: 18px;
+    color: #5DADE2;
+    padding: 8px 0;
+    border-bottom: 2px solid #3498DB;
+    margin-bottom: 15px;
+}
+
+/* 摇杆区域样式 */
+QWidget#translate_joy, QWidget#rotate_joy {
+    background-color: #1E1E1E;
+    border: 2px solid #3498DB;
+    border-radius: 12px;
+    min-width: 230px;
+    min-height: 230px;
+    qproperty-alignment: AlignCenter;
+}
+
+/* 控制标签样式 */
+QLabel#tranlate_c_lb, QLabel#rotate_c_lb {
+    font-size: 16px;
+    color: #5DADE2;
+    padding: 10px;
+    background-color: rgba(52, 152, 219, 0.2);
+    border-radius: 6px;
+}
+
+/* 滑块样式 */
+QSlider {
+    min-height: 20px;
+}
+
+QSlider::groove:horizontal {
+    background: #424242;
+    height: 8px;
+    border-radius: 4px;
+}
+
+QSlider::handle:horizontal {
+    background: #3498DB;
+    border: 2px solid #2C3E50;
+    width: 18px;
+    height: 18px;
+    margin: -5px 0;
+    border-radius: 9px;
+}
+
+QSlider::sub-page:horizontal {
+    background: linear-gradient(to right, #3498DB, #5DADE2);
+    border-radius: 4px;
+}
+
+/* 数字选择框样式 */
+QDoubleSpinBox {
+    background-color: #1E1E1E;
+    color: #FFFFFF;
+    border: 1px solid #3498DB;
+    border-radius: 6px;
+    padding: 5px;
+    min-width: 80px;
+}
+
+QDoubleSpinBox::up-button, QDoubleSpinBox::down-button {
+    background-color: #030303;
+    border-radius: 3px;
+    width: 20px;
+}
+
+QDoubleSpinBox::up-button:hover, QDoubleSpinBox::down-button:hover {
+    background-color: #080808;
+}
+
+/* 速度设置区域样式 */
+QWidget[name="horizontalLayout_5"], QWidget[name="horizontalLayout_6"] {
+    background-color: rgba(30, 30, 30, 150);
+    border: 1px solid #3498DB;
+    border-radius: 8px;
+    padding: 5px 10px;
+}
+
+/* 舵机标签样式 */
+QLabel[label_3], QLabel[label_4], QLabel[label_5],
+QLabel[label_6], QLabel[label_7], QLabel[label_9] {
+    color: #F39C12;
+    font-weight: normal;
+}
+
+QLabel[label_8] {
+    color: #E74C3C;
+    font-weight: bold;
+}
+
+/* 布局间距调整 */
+QVBoxLayout, QHBoxLayout {
+    spacing: 10px;
+    margin: 8px;
+}
+
+/* 悬停效果 */
+QSlider:hover::handle:horizontal {
+    background: #5DADE2;
+    border: 2px solid #1B4F72;
+}
+
+QDoubleSpinBox:hover {
+    border: 1px solid #5DADE2;
+}
+
+/* 聚焦效果 */
+QDoubleSpinBox:focus {
+    border: 2px solid #F39C12;
+}
